@@ -1,42 +1,47 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+.app {
+  width: 100vw;
+  min-height: 200vh;
+  overflow-x: hidden;
+  background-color: #ffffff; /* or whatever bg you're using */
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+body {
+  margin: 0 !important;
+  padding: 0 !important;
+  overflow-x: hidden;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Navbar */
+.navbar {
+  display: flex;
+  padding: 1rem 2rem;
+  background-color: #000000; /* pure black like in screenshot */
+  color: #ffffff;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+/* Brand section */
+.navbar-brand {
+  display: flex;
+  gap: 1rem; /* space between logo and text */
 }
 
-.card {
-  padding: 2em;
+.navbar-logo {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
 }
 
-.read-the-docs {
-  color: #888;
+.navbar-text h2 {
+  margin: 0;
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #ffffff;
+  text-align: left;
+}
+
+.navbar-text span {
+  display: block;
+  font-size: 0.85rem;
+  color: #9ca3af; /* subtle gray subtitle */
 }
