@@ -78,25 +78,30 @@ function SearchAddress() {
       </div>
 
       {error && <p style={{ color: "red" }}>{error}</p>}
-
+      
       <div className="results">
-        {transactions.length > 0 ? (
-          <ul>
-            {transactions.map((tx, index) => (
-              <li key={index}>
-                <strong>Signature:</strong> {tx.signature} <br />
-                <strong>Slot:</strong> {tx.slot} <br />
-                <strong>Block Time:</strong>{" "}
-                {tx.blockTime
-                  ? new Date(tx.blockTime * 1000).toLocaleString()
-                  : "N/A"}
-              </li>
-            ))}
-          </ul>
-        ) : (
-          !error && <p>No transactions found</p>
-        )}
+  {transactions.length > 0 ? (
+    transactions.map((tx, index) => (
+      <div key={index} className="transaction-card">
+        <p>
+          <strong>Signature:</strong> {tx.signature}
+        </p>
+        <p>
+          <strong>Slot:</strong> {tx.slot}
+        </p>
+        <p>
+          <strong>Block Time:</strong>{" "}
+          {tx.blockTime
+            ? new Date(tx.blockTime * 1000).toLocaleString()
+            : "N/A"}
+        </p>
       </div>
+    ))
+  ) : (
+    !error && <p>No transactions found</p>
+  )}
+</div>
+
     </div>
   );
 }
