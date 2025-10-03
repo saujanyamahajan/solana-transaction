@@ -18,13 +18,9 @@ body {
   background-color: #000000; /* pure black like in screenshot */
   color: #ffffff;
   box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  height: 50%;
 }
 
-/* Brand section */
-.navbar-brand {
-  display: flex;
-  gap: 1rem; /* space between logo and text */
-}
 
 .navbar-logo {
   width: 40px;
@@ -32,9 +28,8 @@ body {
   object-fit: contain;
 }
 
-.navbar-text h2 {
-  margin: 0;
-  font-size: 1.25rem;
+.navbar-text h1 {
+  margin-bottom: 2px;
   font-weight: bold;
   color: #ffffff;
   text-align: left;
@@ -42,6 +37,5 @@ body {
 
 .navbar-text span {
   display: block;
-  font-size: 0.85rem;
-  color: #9ca3af; /* subtle gray subtitle */
+  color: #9ca3af; 
 }
