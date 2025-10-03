@@ -9,7 +9,7 @@ function App() {
   <div className="navbar-brand">
     {/* <img src="logo.png" alt="Logo" className="navbar-logo" /> */}
     <div className="navbar-text">
-      <h1>Solana Explorer</h1>
+      <h1>SolVault</h1>
       <span>Track blockchain transactions in real-time</span>
     </div>
   </div>
