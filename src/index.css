@@ -10,38 +10,3 @@ body {
   padding: 0 !important;
   overflow-x: hidden;
 }
-
-/* Navbar */
-.navbar {
-  display: flex;
-  padding: 1rem 2rem;
-  background-color: #000000; /* pure black like in screenshot */
-  color: #ffffff;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
-}
-
-/* Brand section */
-.navbar-brand {
-  display: flex;
-  gap: 1rem; /* space between logo and text */
-}
-
-.navbar-logo {
-  width: 40px;
-  height: 40px;
-  object-fit: contain;
-}
-
-.navbar-text h2 {
-  margin: 0;
-  font-size: 1.25rem;
-  font-weight: bold;
-  color: #ffffff;
-  text-align: left;
-}
-
-.navbar-text span {
-  display: block;
-  font-size: 0.85rem;
-  color: #9ca3af; /* subtle gray subtitle */
-}

@@ -1,41 +1,50 @@
-.app {
-  width: 100vw;
-  min-height: 200vh;
-  overflow-x: hidden;
-  background-color: #ffffff; /* or whatever bg you're using */
-}
-
-body {
-  margin: 0 !important;
-  padding: 0 !important;
-  overflow-x: hidden;
-}
-
 /* Navbar */
 .navbar {
   display: flex;
-  padding: 1rem 2rem;
-  background-color: #000000; /* pure black like in screenshot */
-  color: #ffffff;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
-  height: 50%;
+  align-items: center;
+  justify-content: center;
+  padding: 1.2rem 2rem;
+  background-color: #000;
+  color: #fff;
+  width: 100%;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
-
-.navbar-logo {
-  width: 40px;
-  height: 40px;
-  object-fit: contain;
+.navbar-brand {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
 .navbar-text h1 {
-  margin-bottom: 2px;
-  font-weight: bold;
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin: 0;
   color: #ffffff;
-  text-align: left;
+  letter-spacing: 0.5px;
 }
 
 .navbar-text span {
-  display: block;
-  color: #9ca3af; 
+  color: #d1d5db;
+  font-size: 0.9rem;
+  margin-top: 0.3rem;
+}
+
+/* Responsive Navbar */
+@media (max-width: 600px) {
+  .navbar {
+    padding: 1rem;
+  }
+
+  .navbar-text h1 {
+    font-size: 1.4rem;
+  }
+
+  .navbar-text span {
+    font-size: 0.8rem;
+  }
 }
